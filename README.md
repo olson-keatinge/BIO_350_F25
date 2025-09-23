@@ -25,3 +25,14 @@ IC in class example 2
 - Used matplotlib to plot the data set on a graph. It was no very aesthetically pleasing so we used copilot to make adjustments based on what we wanted eg align x and y axis point 0 and change the colour of graoh etc. 
 - We added a carrying capacity line after finding the averages between days 17 and 60 where the population undulated. then labelled it
 
+IC in class example 3 - Lotka Volterra competition model ch 4 
+- How to calculate and solve for the ability to coexist?
+- Stability; 
+    - properties for an equilibrium state 
+    - what happens when there is a pertubation? 
+- Description of graphs produce: 
+   -  After the pertubation of an immigration of 50 individuals into species M population, both species were impacted - Species M increased, species N decreased - but they stabilised and returned to equilibrium.
+   -  After the pertubation of an immigration of 200 individuals into species M population, both species were impacted - Species M increased, species N decreased - but they stabilised and returned to equilibrium.
+   - After the changing alpha values to 0.9 for both species from 0.5, the Species N population increased until day 6, then rapidly decreased as species M population continued to increase until it plateaued at its carrying capacity 500. Species N then decreased until its population hit 0. at day 15, the population of M saw increase of 200 as an immigration occured. The increase of M continued increasing until carrying capacity and population N experienced a sudden drop in population, then a slow decline until population of 0. 
+
+   
