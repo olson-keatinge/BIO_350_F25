@@ -46,3 +46,6 @@ IC_inClassExample4 - SIR/SIZC modelling
    - In this assignment we analysed the SIR model, in this case it was a SIZC model used in a journal article. The code was written in R, so we had to translate it using copilot or chatgpt. 
    - This was fairly smooth, although I saw some errors when I didn't have the scipy installed. After troubleshooting and asking chatgpt for the correct syntax the code worked and I eventually had to install pandas. Installing pandas was my last error.
    - The box and flow diagram included susceptible, infected, zoospores, carcesses of the salamander population and beta p, beta c and beta z as well as decay rate of carcasses, decay rate of the fungi zoospores, avg survival time (a), mew, and standard deviation variables. 
+
+   IC_Assignment6 - ch 12 Matrix Modelling 
+   - in this assignment we investigated how the individual yearly models influence the 
