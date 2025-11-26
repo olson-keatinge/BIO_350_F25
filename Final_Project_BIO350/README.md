@@ -36,7 +36,9 @@ Some technical coding errors arose and have been delt with the labels and data, 
 
 Week of Nov. 24, 2025
 The AMWO recoveries data was re-evaluated and I decided to readjust the target goal and analysis of this project. The goal: 
-The goal of this project is to develop a machine learning model that predicts the age at which American Woodcocks die based on different variables including banding year, banding month, banding flyway, banding region, recovery year, recovery month, recovery flyway, recovery region, sex, method of recovery, and status. If yes, what is the most important feature to predict the age depending on the recovery month? 
+The goal of this project is to develop a machine learning model that predicts the age at which American Woodcocks die based on different variables including banding year, banding month, banding flyway, banding region, recovery year, recovery month, recovery flyway, recovery region, sex, method of recovery, and status. If yes, what is the most important feature involved in predicting the age depending on the recovery month? 
 
 A key objective is to evaluate feature importance to determine which variables most strongly influence age prediction, with a particular focus on how the importance of predictors varies depending on the recovery month. This will provide insights into seasonal or temporal patterns in age determination and help identify the most informative ecological and demographic factors for age classification.
+
+
 
