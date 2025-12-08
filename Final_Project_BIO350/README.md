@@ -40,5 +40,13 @@ The goal of this project is to develop a machine learning model that predicts th
 
 A key objective is to evaluate feature importance to determine which variables most strongly influence age prediction, with a particular focus on how the importance of predictors varies depending on the recovery month. This will provide insights into seasonal or temporal patterns in age determination and help identify the most informative ecological and demographic factors for age classification.
 
+Monday December 8, 2025. 
+I realised that this model has very high weight on the feature of Birth year and month and recovery year and month. These features mathematically calculate the age of the birds, so naturally it will have high correlation; it is data leakage. 
+Therefore, these features and predictors must not be included in the machine learning model due to the fact that they directly calculate the age of the birds.  
+The meaningful predictors are features such as: 
+Birth Flyway, Birth Region, Recovery Flyway, Recovery Region, Sex, How Obtained (shot, salvaged, found dead, etc.), Status (dead/alive)
+These represent actual biological or human-influenced processes related to mortality. 
+
+The features causing data leakage will be dropped in the code so as to avoid their inclusion in the machine learning model, however they will be maintained in the calculation of the age in months. 
 
 
