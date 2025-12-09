@@ -49,4 +49,8 @@ These represent actual biological or human-influenced processes related to morta
 
 The features causing data leakage will be dropped in the code so as to avoid their inclusion in the machine learning model, however they will be maintained in the calculation of the age in months. 
 
+Tuesday December 7, 2025. 
+I downloaded VSCode on my personal laptop to make the changes in the code. I attempted to add the changes via my github repository, but it wasn't successful. Instead of adding the changes to my model, I will anaylse how it can be improved in my discussion of the results in order to simplify the project. 
+
+
 
