@@ -1,0 +1,46 @@
+---
+title: "AMWOrecoveriesdist"
+author: "Emma OK"
+date: "2025-12-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Boxplot showing Age at Death Vs Recovery Region considering the first 100 rows of data from AMWO Recoveries
+```{r}
+library(ggplot2)
+
+AMWO <- read.csv("~/Downloads/saund123-Saunders_etal_2019_Ecol-ec80675/Raw_Data/AMWO recoveries.csv")
+AMWO100 <- AMWO[1:100, ]
+
+#Calculating Age at Death from recovery and banding data 
+AgeAtDeath <- (AMWO100$R.Year - AMWO100$B.Year) * 12 +
+                   (AMWO100$R.Month - AMWO100$B.Month)
+
+#Remove negative or impossible values
+AMWO100R <- subset(AMWO100, AgeAtDeath >= 0)
+
+#plot the data
+#Scatterplot of Age at death vs count
+ggplot(AMWO100R, aes(x = AgeAtDeath)) +
+  geom_histogram(binwidth = 6) +
+  labs(x = "Age at Death (months)",
+       y = "Count",
+       title = "Distribution of Age at Death")
+
+ggplot(data = AMWO100R, aes(x = RFly..Flyway, y = AgeAtDeath)) +
+  geom_boxplot() +
+  xlab("Recovery Flyway Region") +
+  ylab("Age at Death (months)") +
+  ggtitle("Age at Death by Recovery Flyway Region")
+
+```
+
+
+The Histogram displays a positively skewed distribution. The most common age at death for American Woodcocks sits 50 months and below. The count dramatically tapers down from 0 to 100 months. There is an outlier which is identified as being nearly 450 months between banding and recovery. This = about 37.5 years, therefore this must be an error in the data as the average lifespan of a wild American Woodcock is 8 years, with the longest living banded American Woodcock living to 11 yrs 4months. 
+The Boxplot shows the median age at death for woodcocks in the Atlantic is lower than that of the Canada and Mississippi flyway regions, with the Mississippi Flyway region seeing the greatest spread of ages and Canada showing no spread. Perhaps there was limited data for the Canadian Flyway region. 
+
+Overall the data appears to have some inconsistencies and may be difficult to accurately compare when the outlier/error datapoint is still included in the boxplot. The outlying datapoint was not able to be removed. 
