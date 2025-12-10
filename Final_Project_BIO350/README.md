@@ -75,7 +75,6 @@ For example:
 
 leak_cols = ['B Year','B Month','R Year','R Month']
 data = data.drop(columns=leak_cols) 
---
 
 This would remove the features that directly mathematically calculate age, thereby removing the data leakage, and optimistically the model would then produce results that show biologically meaningful inference. The R Year, R Month, B Year, and B Month would no longer dominate the feature importance and skew results, and the actual ecological variables would be considered for the feature importance of which variables influence the age of death of the American Woodcocks.
 
